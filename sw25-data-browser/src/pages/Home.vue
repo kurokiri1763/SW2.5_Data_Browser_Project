@@ -5,8 +5,8 @@
       <p class="subtitle">カテゴリを選んでください</p>
 
       <div class="buttons">
-        <button class="button is-link" disabled>魔法データ（準備中）</button>
-        <button class="button is-info" disabled>アイテムデータ（準備中）</button>
+        <RouterLink to="/magic" class="button is-link" >魔法データ</RouterLink>
+        <RouterLink to="/items" class="button is-info" >アイテムデータ</RouterLink>
         <!-- 将来的にルーターリンクへ切り替え -->
       </div>
     </div>
