@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import MagicForm from './MagicForm.vue'
   import MagicNameInput from './fields/MagicNameInput.vue'
   import MagicSystemSelect from './fields/MagicSystemSelect.vue'
 //   import MagicMPInput from './fields/MagicMPInput.vue'
@@ -7,7 +8,7 @@
   
   const magic = ref({
     name: '',
-    system: '神聖魔法',
+    system: '真語魔法',
     mp: 0,
     effect: '',
   })
@@ -16,6 +17,7 @@
     console.log('保存:', magic.value)
     // データ保存ロジックを後で追加
   }
+
   </script>
 
 <template>
@@ -27,6 +29,7 @@
   
       <div class="field">
         <button class="button is-primary" type="submit">保存</button>
+        <RouterLink to="/magic" class="button is-link">魔法データ一覧に戻る</RouterLink>
       </div>
     </form>
   </template>
