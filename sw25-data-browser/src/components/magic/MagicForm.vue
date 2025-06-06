@@ -2,8 +2,8 @@
   import { ref } from 'vue'
   import MagicNameInput from './fields/MagicNameInput.vue'
   import MagicSystemSelect from './fields/MagicSystemSelect.vue'
-  import MagicMPInput from './fields/MagicMPInput.vue'
-  import MagicEffectTextarea from './fields/MagicEffectTextarea.vue'
+//   import MagicMPInput from './fields/MagicMPInput.vue'
+//   import MagicEffectTextarea from './fields/MagicEffectTextarea.vue'
   
   const magic = ref({
     name: '',
@@ -22,8 +22,8 @@
     <form @submit.prevent="submit">
       <MagicNameInput v-model="magic.name" />
       <MagicSystemSelect v-model="magic.system" />
-      <MagicMPInput v-model.number="magic.mp" />
-      <MagicEffectTextarea v-model="magic.effect" />
+      <!-- <MagicMPInput v-model.number="magic.mp" />
+      <MagicEffectTextarea v-model="magic.effect" /> -->
   
       <div class="field">
         <button class="button is-primary" type="submit">保存</button>
