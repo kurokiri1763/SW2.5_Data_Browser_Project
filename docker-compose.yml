@@ -14,3 +14,7 @@ services:
 
 volumes:
   db-data:
+  
+# MySQL入る時のコマンド
+# docker exec -it sw25-mysql mysql -u root -p
+# USE <データベース名>;
